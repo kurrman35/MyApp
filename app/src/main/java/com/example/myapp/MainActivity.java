@@ -23,8 +23,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     EditText EdText1,EdText2,EdText3;
     Button btnSetting,btnStart;
     TextView tvText4,tvText5,tvText2;
-    Handler updateConversationHandler;
-    SharedPreferences sharedPreferences;
+     SharedPreferences sharedPreferences;
     int count;
 
 
@@ -45,12 +44,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
          switch (v.getId()) {
             case R.id.btnStart:
-                Log.d(LOG_TAG, "btnStart = " );
-
+              
                 String s1= EdText1.getText().toString();
                 String s2= EdText2.getText().toString();
-                System.out.println(s1+"  s1  " +s2);
-
+                
                 int b []=FromString(s2);
                 int price []=FromString(s1);
                 int [] pr2=decryptData(price, b[0], b[1], b[2]);
@@ -74,8 +71,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String[] subStr;
         String delimeter = ","; // Разделитель
         subStr = str.split(delimeter);
-        System.out.println(subStr.length+" subStr.length   " +"/"+subStr[0]+"/");
-
+      
         int [] b=new int[subStr.length];
 
         for(int i=0; i<subStr.length;i++ ){
