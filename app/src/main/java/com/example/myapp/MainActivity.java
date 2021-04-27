@@ -23,8 +23,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     EditText EdText1,EdText2,EdText3;
     Button btnSetting,btnStart;
     TextView tvText4,tvText5,tvText2;
-     SharedPreferences sharedPreferences;
-    int count;
+    
 
 
     @Override
