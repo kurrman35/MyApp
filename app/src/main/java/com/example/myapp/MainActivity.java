@@ -37,8 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnSetting=(Button)findViewById(R.id.btnSetting);
         btnStart=(Button)findViewById(R.id.btnStart);
         tvText5=(TextView)findViewById(R.id.tvText5);
-        updateConversationHandler = new Handler();
-     }
+        }
 
     @Override
     public void onClick(View v) {
