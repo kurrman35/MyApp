@@ -17,27 +17,45 @@ Developer
 Доработайте код.
 
 public static void main(String[] args) {
+
  Employee tester = new Employee(7,“Developer”);
+ 
  System.out.println(tester.getId());
+ 
  System.out.println(tester.getVacancy());
+ 
  }
  
  class Employee {
+ 
  private long id;
+ 
  private Vacancy vacancy;
+ 
  String getVacancy() {
+ 
  return vacancy.getVacancy();
+ 
  }
  
  long getId() {
+ 
  return id;
+ 
  }
+ 
  }
+ 
  class Vacancy {
+ 
  String getVacancy() {
+ 
  return "engineer";
+ 
 }
+
 }
+
 
 Задача 2.
 Написать полную реализацию
@@ -54,24 +72,37 @@ offset
  */
  
 public @Nullable int[] decryptData(@NonNull int[] price,
+
 @IntRange(from = 1) int discount,
+
 @IntRange(from = 0) int offset,
+
 @IntRange(from = 1) int readLength) {
+
 //TODO реализовать метод
+
 }
 
 
 Пример
 Входные данные
+
 price = [5,100,20,66,16]
+
 discount = 50
+
 offset = 1
+
 readLength = 3
+
 Ожидаемый результат работы
+
 [50,10,33]
 
 Задача 3.
+
 Написать приложение, которое при третьем своем холодном старте показывает
+
 Toast с произвольным текстом.
 
 
